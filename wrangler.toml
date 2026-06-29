@@ -1,0 +1,9 @@
+name = "qimen-api"
+main = "src/work.ts"
+compatibility_date = "2024-05-01"
+
+[vars]
+NCB_API_KEY = "22289c32e37a6512c9e3c26f88fda95d9c0322ff987685178bd4f5f2057af072"
+NCB_BASE_URL = "https://api.nocodebackend.com"
+NCB_INSTANCE = "41667_qimenbazi"
+LLM_API_KEY = "27ace7b5ecf91fd76e7fe3720c2b8a5c"
