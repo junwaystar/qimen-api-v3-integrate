@@ -1,0 +1,19 @@
+{
+  "name": "qimen-api-v3-integrate",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "tail": "wrangler tail"
+  },
+  "dependencies": {
+    "lunar-javascript": "^1.7.7"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240605.0",
+    "typescript": "^5.4.0",
+    "wrangler": "^3.50.0"
+  }
+}
