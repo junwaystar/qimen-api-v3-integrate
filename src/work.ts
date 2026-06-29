@@ -2,6 +2,7 @@ import { Env, ApiResponse, corsHeaders } from './types';
 import { handleRegister } from './register';
 import { handleChat } from './qimen_llm';
 import { handleBazi } from './bazi';
+import { handleBaziStream } from './bazi_stream';
 import { CalendarService } from './services/CalendarService';
 
 export default {
@@ -85,6 +86,11 @@ export default {
     // === 整合 v3:八字專屬獨立端點 ===
     if (url.pathname === "/api/bazi" && request.method === "POST") {
       return await handleBazi(request, env, corsHeaders);
+    }
+
+    // === 整合 v3.1:八字 SSE 串流端點 ===
+    if (url.pathname === "/api/bazi/stream" && request.method === "POST") {
+      return await handleBaziStream(request, env);
     }
 
     try {
